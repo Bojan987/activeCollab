@@ -1,0 +1,230 @@
+
+.appWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+/* homepage layout */
+.homePageLayout{
+    width: 1440px;
+    height: 670px;
+    display: grid;
+    grid-auto-columns: 272px;
+    grid-auto-flow: column;
+    grid-gap: 22px;
+    /* background-color: aqua; */
+    overflow-x: scroll;
+    scrollbar-color: #8a8888 #ffff;
+    scrollbar-width: thin;
+    
+}
+
+/* rows  */
+.row-wrapper{
+ 
+  display: grid;
+  grid-auto-rows: max-content;
+  grid-gap: 10px;
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-color: #8a8888 #ffff;
+  scrollbar-width: thin;
+  width: 275px;
+  
+}
+
+
+/* Header*/
+.title-wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 236px;
+  
+
+}
+
+.title{
+  font-family:'HelveticaNeueBold' ;
+  font-size: 16px;
+}
+
+.title-cardNumber{
+
+  opacity: 0.5;
+  color: #373737;
+  font-family: "HelveticaNeueBold";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 17px;
+  margin-left: 7px;
+}
+
+/* Cards */
+.card-wrapper{
+  
+  width: 260px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+  padding: 12px;
+  }
+  .label-wrapper{
+    display: flex;
+    align-items: center;
+   
+  }
+
+  .card-label_wrapper{
+    display: flex;
+    align-items: center;
+  }
+
+.card-title{
+  height: 36px;
+  width: 236px;
+  color: #373737;
+  font-family: "SfProDisplayLight";
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 18px;
+  display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+.card-label1{
+  height: 8px;
+  width: 8px;
+  background-color: #4B9AE5;
+  border-radius: 50%;
+  display: inline-block;
+  
+
+}
+.card-label2{
+  height: 8px;
+  width: 8px;
+  background-color: #F47075;
+  border-radius: 50%;
+  margin-left: 8px;
+  display: inline-block;
+ 
+}
+.card-label3{
+  height: 8px;
+  width: 8px;
+  background-color: #64CD7C;
+  border-radius: 50%;
+  margin-left: 8px;
+  display: inline-block;
+
+}
+.card-label4{
+  height: 8px;
+  width: 8px;
+  background-color: #FFC236;
+  border-radius: 50%;
+  margin-left: 8px;
+  display: inline-block;
+ 
+}
+.card-label5{
+  height: 8px;
+  width: 8px;
+  background-color: #B06AD1;
+  border-radius: 50%;
+   margin-left: 8px;
+   display: inline-block;
+   
+ 
+}
+
+.label-additionalCount{
+  height: 14px;
+  width: 15px;
+  color: #8E8E8E;
+  font-family: "SfProDisplayLight";
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 14px;
+  margin-left: 4px;
+}
+
+
+
+.card-message{
+  margin-left: 12px;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* date section */
+
+.date-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.date{
+  height: 15px;
+  width: 96px;
+  color: #373737;
+  font-family: "SfProDisplaybold";
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 15px;
+}
+
+/*Light and dark classes attached to html  */
+  .light-mode {
+    color: #101212;
+    background-color: #ffffff;
+  }
+  
+  .dark-mode {
+    color: #cccccc;
+    background-color: #101212;
+  }
+
+
+@font-face {
+  font-family: "HelveticaNeueBold";
+  src: local("HelveticaNeueBold"),
+   url("./fonts/HelveticaNeueBold.ttf") format("truetype");
+  font-weight: bold;
+  }
+
+
+  @font-face {
+    font-family: "HelveticaNeueRegular";
+    src: local("HelveticaNeueRegular"),
+     url("./fonts/HelveticaNeueRegular.ttf") format("truetype");
+    font-weight: 'regular';
+    }
+
+@font-face {
+  font-family: "SfProDisplaybold";
+  src: local("SfProDisplaybold"),
+    url("./fonts/SFPRODISPLAYBOLD.otf") format("truetype");
+    font-weight: bold;
+    }
+
+@font-face {
+  font-family: "SfProDisplayLight";
+  src: local("SfProDisplayLight"),
+    url("./fonts/SFPRODISPLAYREGULAR.otf") format("truetype");
+    font-weight: 'regular';
+        }
+    
+

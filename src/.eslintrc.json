@@ -1,0 +1,22 @@
+{
+    "extends": ["react-app"  ],
+    
+    "rules": {
+        
+        "no-unused-vars": "warn",
+        "no-console": "off",
+        "func-names": "off",
+        "no-process-exit": "off",
+        "object-shorthand": "off",
+        "class-methods-use-this": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx",".ts"] }],
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-props-no-spreading": "off",
+        "no-underscore-dangle": "off",
+        "import/no-named-as-default": "off",
+        "import/no-named-as-default-member": "off"
+    },
+    "parserOptions": {
+        "sourceType": "module"
+    }
+}
