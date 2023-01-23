@@ -6,9 +6,8 @@ import Messages from "./Components/Messages";
 import SignifierGroup from "./Components/SignifierGroup";
 
 const Card = ({ card }) => {
-  console.log(card);
   return (
-    <div className="card-wrapper">
+    <div className="card-wrapper" key={card.cardTile}>
       <p className="card-title">{card.cardTile}</p>
       <div className="label-wrapper">
         {/* color labels */}
