@@ -11,12 +11,16 @@ const Card = ({ card }) => {
     <div className="card-wrapper">
       <p className="card-title">{card.cardTile}</p>
       <div className="label-wrapper">
+        {/* color labels */}
         {card.label && <Labels labelNumber={card.label} />}
+        {/* messages icon  */}
         {card.messages && <Messages messagesNumber={card.messages} />}
+        {/* signifier icon  */}
         {card.signifierGroup && (
           <SignifierGroup signifierNumber={card.signifierGroup} />
         )}
       </div>
+      {/* date start and date due  */}
       <div className="date-wrapper">
         {card.startDate && (
           <DateComponent dueDate={card.dueDate} startDate={card.startDate} />

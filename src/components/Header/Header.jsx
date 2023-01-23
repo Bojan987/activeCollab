@@ -1,8 +1,10 @@
 import React from "react";
 import Title from "../Title/Title";
 
+//header of each row
 const Header = ({ title, cardsNumber }) => {
   return (
+    // Title component and settings icon
     <div className="title-wrapper">
       <Title title={title} cardsNumber={cardsNumber} />
       <svg

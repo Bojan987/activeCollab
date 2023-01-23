@@ -4,20 +4,20 @@ import { createContext, useContext, useState, useLayoutEffect } from "react";
 const ThemeContext = createContext();
 
 const ThemeProvider = ({ children }) => {
-  // Theme Toggle Logic starts here...
-
+  // check default browser theme
   const isBrowserDefaultDark = () =>
     window.matchMedia("(prefers-color-scheme: dark)").matches;
 
+  //  if theres already set theme for this app  use it  otherwise take broser default theme
   const getDefaultTheme = () => {
     const localStorageTheme = localStorage.getItem("theme");
     const browserDefault = isBrowserDefaultDark() ? "dark" : "light";
     return localStorageTheme || browserDefault;
   };
 
-  console.log(getDefaultTheme());
   const [theme, setTheme] = useState(getDefaultTheme());
 
+  // theme handler
   const handleThemeChange = () => {
     const isCurrentDark = theme === "dark";
     setTheme(isCurrentDark ? "light" : "dark");
